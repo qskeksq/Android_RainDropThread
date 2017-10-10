@@ -4,6 +4,8 @@
 - ConcurrentModificationException 해결
     - thread-safe 리스트 사용 CopyOnWriteArrayList<RainDrop> synchronizedArrayList = new CopyOnWriteArrayList<>();
     - Observable을 통해 동기화
+    - List<RainDrop> synchronizedArrayList = Collections.synchronizedList(new ArrayList<RainDrop>()); -> synchronized(raindrop){ ... }
+
 
 ![](https://github.com/qskeksq/ThreadBasic/blob/master/pic/AC_%5B20171010-184344%5D.gif)
 
